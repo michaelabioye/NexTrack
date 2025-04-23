@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Name: A coding challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/themes.css" rel="stylesheet">
+
+
+</head>
+
+<body data-ma-theme="blue">
+    <header>
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/img/michael Abi ye (3)/9.png" height="33" /> App Name</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="app.html">The app</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/code.html">The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/" target="blank">The Repo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://michaelabioye.netlify.app" target="blank">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- change this to your blog website -->
+                            <a class="nav-link" href="https://michaelabioye.netlify.app" target="blank">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-3">
+        <h1> The app UI goes here</h1>
+        <div class="hstack gap-3">
+            <input id="messageinput" class="form-control" style="max-width: 12rem" placeholder="enter a message">
+            <button id="submitbtn" class="btn btn-primary">
+                Display Message
+            </button>
+        </div>
+    </main>
+
+
+    <footer data-bs-theme="dark" class="container-fluid py-3">
+        <div class="container">
+            <div class="row gy-1 text-center align-items-center">
+                <div class="col-12 col-md-4">
+                    <img src="/img/michael Abi ye (3)/4.png" height="45" />
+                </div>
+                <div class="col-12 col-md-4 text-md-end text-decoration-none">
+                    <a href="https://www.linkedin.com/in/michael-abioye-5746bb360/" class="text-decoration-none"
+                        target="blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/michaelabioye" class="text-decoration-none" target="blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://x.com/Inmyselfiknow" class="text-decoration-none" target="blank">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="//michaelabioye77@gmail.com" class="text-decoration-none" target="blank">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </a>
+
+                </div>
+                <div class="col-12 col-md-4 text-md-start order-md-first">
+                    &copy; 2025 Michael Abioye
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/js/site.js"></script>
+    <script>
+        //get the <button> element from the html//
+
+        let button = document.getElementById('submitbtn');
+
+        //when the button is clicked, run the displayMessage function//
+        //javascript is used to create functions then you take that function//
+        //and place it into the html//
+
+        button.addEventListener('click', displayMessage);
+    </script>
+
+</body>
+
+</html>

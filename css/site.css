@@ -1,0 +1,64 @@
+/* sticky footer css*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* END sticky footer CSS */
+
+nav,
+footer {
+    background-color: var(--ma-theme-900);
+    color: var(--ma-theme-100)
+}
+
+footer .bi {
+    color: var(--ma-theme-200);
+    font-size: 1.5rem;
+    padding-inline-start: .25rem;
+    transition: color .25s
+}
+
+footer .bi:hover {
+    color: var(--ma-theme-400);
+}
+
+.nav-link:hover {
+    color: var(--ma-theme-300);
+
+}
+
+.checklist {
+    list-style-type: none;
+}
+
+.checklist .bi {
+    color: var(--ma-theme-core);
+}
+
+.devicon {
+    font-size: 3.3rem;
+
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--ma-theme-600);
+    --bs-btn-border-color: var(--ma-theme-600);
+    --bs-btn-hover-bg: var(--ma-theme-700);
+    --bs-btn-hover-border: var(--ma-theme-700);
+    --bs-btn-active-bg: var(--ma-theme-800);
+    --bs-btn-active-border: var(--ma-theme-800);
+}
+
+.app-logo {
+    max-width: 400px;
+}
