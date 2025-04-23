@@ -12,7 +12,7 @@ function displayMessage() {
     Swal.fire(
         {
             backdrop: false,
-            title: 'App Name',
+            title: 'NexTrack',
             text: message,
         }
     )
