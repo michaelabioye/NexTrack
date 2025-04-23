@@ -70,10 +70,7 @@
                                 All Events
                             </button>
                             <ul class="dropdown-menu" id="city-dropdown">
-                                <li><button class="dropdown-item">New York</button></li>
-                                <li><button class="dropdown-item">San Diego</button></li>
-                                <li><button class="dropdown-item">Charlotte</button></li>
-                                <li><button class="dropdown-item">Charlotte</button></li>
+                                <!--event cities go here-->
                             </ul>
                         </div>
 
@@ -89,19 +86,19 @@
                             <tbody>
                                 <tr>
                                     <td>Total Attendance</td>
-                                    <td class="text-end" id="stats-total"> 1000</td>
+                                    <td class="text-end" id="stats-total"> 0</td>
                                 </tr>
                                 <tr>
                                     <td>Average Attendance</td>
-                                    <td class="text-end" id="stats-avg"> 1000</td>
+                                    <td class="text-end" id="stats-avg"> 0</td>
                                 </tr>
                                 <tr>
                                     <td>Most Attended</td>
-                                    <td class="text-end" id="stats-max"> 1000</td>
+                                    <td class="text-end" id="stats-max"> 0</td>
                                 </tr>
                                 <tr>
                                     <td>Least Attended</td>
-                                    <td class="text-end" id="stats-min"> 1000</td>
+                                    <td class="text-end" id="stats-min"> 0</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -125,53 +122,10 @@
                                 <th> State</th>
                                 <th> Date</th>
                                 <th class="text-end"> Attendance</th>
-
-
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
-                            <tr>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td> comic con</td>
-                                <td class="text-end"> comic con</td>
-                            </tr>
+                        <tbody id="events-table">
+
 
                         </tbody>
 
@@ -221,6 +175,19 @@
         </div>
 
     </footer>
+    <template id="event-row-template">
+        <tr>
+            <td class="evt-name"></td>
+            <td class="evt-city"></td>
+            <td class="evt-state"></td>
+            <td class="evt-date"></td>
+            <td class="evt-attendance text-end"></td>
+        </tr>
+    </template>
+
+    <template id="dropdown-item-template">
+        <li><button class="dropdown-item"></button></li>
+    </template>
 
 
 
