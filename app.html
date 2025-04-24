@@ -35,7 +35,7 @@
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="app.html">The app</a>
+                            <a class="nav-link active" href="app.html">The App</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/code.html">The Code</a>
@@ -198,15 +198,9 @@
 
     <script src="/js/site.js"></script>
     <script>
-        //get the <button> element from the html//
+        //create a drop down when the page quit loading//
+        document.addEventListener('DOMContentLoaded', buildDropDown);
 
-        let button = document.getElementById('submitbtn');
-
-        //when the button is clicked, run the displayMessage function//
-        //javascript is used to create functions then you take that function//
-        //and place it into the html//
-
-        button.addEventListener('click', displayMessage);
     </script>
 
 </body>
