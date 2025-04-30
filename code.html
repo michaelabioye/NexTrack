@@ -41,7 +41,8 @@
                             <a class="nav-link active" href="/code.html">The Code</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/" target="blank">The Repo</a>
+                            <a class="nav-link" href="https://github.com/michaelabioye/NexTrack" target="blank">The
+                                Repo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://michaelabioye.netlify.app" target="blank">Portfolio</a>
@@ -74,15 +75,71 @@
 
             <div class="col-12 col-lg-4">
                 <h3> How it works</h3>
-                <p>The code is structured in one function</p>
+
 
                 <h5>
-                    <code>displaymessage()</code>
+                    This is my NexTrack Java. Code.
                 </h5>
                 <p>
-                    the <code>displaymessage</code> function reads the text from the input and
-                    displays it in a sweet alert popup
+                    NexTrack is an event tracker that displays an array of
+                    statistics for various events. This UI/UX was built
+                    using 3 key languages; javaSCript, CSS, and HTML.
                 </p>
+                <hr />
+                <h3><code>buildDropDown</code></h3>
+                <p>Lets go over the 7 functions that I broke this code down in using javascript.
+                    The first function we have is <code>buildDropDown</code>. I used this function to display the cities
+                    that the events
+                    took place in by using a for loop to get the cities out of the array of objects. Then I used another
+                    for loop to display those cities once you click on the "All Events" button. I had a few
+                    duplicates of
+                    cities inside the array so I used a constructor function called <code>new Set</code> to help create
+                    an object with unique values that got rid of any duplicates. To display the drop down, I copied the
+                    <code>element</code>
+                    ID's to my javascript from my HTML page.
+                </p>
+                <hr />
+                <h3><code>filterByCity </code></h3>
+                <p>The second function I have is <code>filterByCity</code>
+                    this function was made to filter each city statistics by clicking on a specific city in the drop
+                    down option. I gave <code>displayStats</code> and <code> displayEvents</code> a parameter of
+                    <code>filteredEvents</code> to display the statistics of that particular city.
+                </p>
+                <hr />
+                <h3><code>displayStats</code></h3>
+                In code number 3, <code>displayStats</code> has an array of objects in its parameter where I use a for
+                loop
+                to display the minimum , maximum, total, and average numbers
+                of the attendees that were at said event.
+                <hr />
+                <h3><code>displayEvents</code></h3>
+                <p>In my fourth function <code>displayEvents</code>, I used a for loop to pull the objects out of the
+                    array. Once I had the objects out of the array, I cloned my <code>tableRowEl</code>
+                    and assigned a new variable and a <code> querySelector </code> to each class in the table template.
+                    After assigning the querySelectors and the new variables, I then went into my array of objects
+                    and pulled out event, city, state, date, and attendance to display my events in the table.
+                </p>
+                <hr />
+                <h3><code>saveNewEvent</code> </h3>
+                <p>Number 5. <code> saveNewEvent</code>. I made this function so that any new events added to the form I
+                    created
+                    can be saved and displayed in both tables. So that the new data matches the data that is already
+                    stored in the array of objects,
+                    I converted the attendance string into a number, and I gave the function
+                    <code>toLocaleDateString</code> to my date. AFter that I push my new form to the
+                    <code>getEvent</code> fucntion and my <code>saveEvents</code>
+                    function as a backup in my <code>getEvents</code> if statement.
+
+                </p>
+                <hr />
+                <h3><code>getEvents</code></h3>
+
+                <p>The second to last function <code>getEvents</code>
+
+                </p>
+
+
+
             </div>
 
 
