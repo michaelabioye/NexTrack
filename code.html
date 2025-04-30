@@ -134,9 +134,22 @@
                 <hr />
                 <h3><code>getEvents</code></h3>
 
-                <p>The second to last function <code>getEvents</code>
-
+                <p>As you may have seen throughout my code, the second to last function <code>getEvents</code> retrieve
+                    information in the form of strings from my <code>saveEvents</code> function.
+                    After retreiving the string of text, I turn the string of text back into an array of objects so that
+                    my page will still run smoothly. Note: I created an <code>if</code> statement for the soul purpose
+                    of having a backup plan set just incase I went to retrieve my string of text from the
+                    <code>saveEvent</code> function and it returned a value of <code>null</code>.
                 </p>
+                <hr />
+                <h3><code>saveEvents</code></h3>
+                <p>My last and final function on my javascript code is <code>saveEvents</code>.
+                    This is where my code will be stored and converted into a string of text.
+                    <code>JSON.stringify</code>
+                    converts my code to strings. Then I used <code>setItem</code> with a key value pair to finalize the
+                    code being stored.
+                </p>
+
 
 
 
