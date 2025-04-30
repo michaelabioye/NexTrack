@@ -126,7 +126,7 @@ function filterByCity(clickEvent) {
     //now get an array of all the eevnts you know about
     document.getElementById('stats-city').innerText = selectedCity;
     document.getElementById('dropdown-btn').innerText = `${selectedCity} Events`;
-    //back tick uses dollarsign and curly bracket to substitue part of the variabvle
+    //back tick uses dollarsign and curly bracket to substitue part of the variabvle for whatever the value is and make it a string
 
 
 
@@ -172,9 +172,11 @@ function displayStats(events) {
         let eventObject = events[i];
         sum = sum + eventObject.attendance;
 
+
         if (eventObject.attendance > max) {
             max = eventObject.attendance;
         }
+
         if (eventObject.attendance < min) {
             min = eventObject.attendance;
         }
