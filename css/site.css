@@ -67,3 +67,37 @@ th,
 td {
     text-wrap: nowrap;
 }
+
+/* This is for my JavaSCript ---Local Storage Notes
+this means that it will only be stored in the specific browser
+that you saved the info in. its also only stored on that URL.
+-local storage is INsecure storage
+-local storage is Not Permanent
+-local storage is key value pairs of only strings its like objects
+but not objects key=time value=3:50pm*/
+
+
+/*<template id"event-row-template"=>
+<tr>
+    <td class="evt-name"></td>
+    <td class="evt-city"></td>
+    <td class="evt-state"></td>
+    <td class="evt-date"></td>
+    <td class="evt-attendance text-end"></td>
+</tr>
+</template >*/
+
+/* given an array of event objects, create a new array
+of just the city names for each event.
+
+//let cities = currentEvents.map(event => event.city); is another code you can write
+// for a for loop that shows map as a function
+
+getting things out of the array will take a for loop to get the answer
+if you see for or each and its being specific or when you get insied of.
+to access any data you need a for loop*/
+/*html is like an array*/
+/*//events[i] is a part of the for loop that will take out 
+// one thing out of the array of "objects" in this case
+// first you have your loop that will target whatever you want
+// and under the loop */
